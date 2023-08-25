@@ -1,0 +1,77 @@
+/* Importing google font for the entire page */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+/* styling the body with the background */
+body {
+    background: url('../img/bg-img.jpg') center center fixed;
+    background-size: cover;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: #fff !important;
+}
+
+
+/* styling the stopwatch container */
+#header h2 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+/* styling the lap-time */
+#laptime {
+    text-align: right;
+    margin-right: 2vw;
+    font-size: 2vw;
+}
+
+/* styling the time */
+#time {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 4vw;
+}
+
+/* styling the control-container */
+#control-container {
+    margin-bottom: 100px;
+}
+
+.btn-control {
+    border-radius: 50%;
+    background-color: #d7a04e;
+    text-align: center;
+    height: 10vw;
+    width: 10vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+    padding: 25% 0;
+}
+
+.btn-control:hover {
+    background-color: #fff;
+    color: #d7a04e;
+    transition: all linear 0.3s;
+}
+
+/* styling the laps div */
+#laps {
+    max-height: 270px;
+    overflow-y: scroll; /* when there is an overflow in the vertical axis, scroll bar should appear */
+}
+
+/* styling the lap */
+.lap {
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    margin: 15px;
+}
+
+/* styling the laptimetitle */
+.laptimetitle {
+    font-size: 1.5em;
+    float: left;
+}
+
+.laptime {
+    font-size: 2em;
+    float: right;
+}

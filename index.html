@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- jquery-ui files -->
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.theme.min.css">
+
+    <!-- bootstrap 3.4.1 css files -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    
+    <!-- external css file -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+    
+    <!-- google font - arvo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+    
+    <!-- title of our website that appears in the address bar of the browser -->
+    <title>Stop Watch App</title>
+  </head>
+  <body>
+
+    <!-- set up the stopwatch container -->
+    <div class="container-fluid">
+      <div id="header">
+        <h2>Stopwatch Counter App</h2>
+      </div>
+
+    <!-- set the lap-time -->
+    <div id="laptime">
+      <span id="lapminutes">00</span>:
+      <span id="lapseconds">00</span>:
+      <span id="lapcentiseconds">00</span>
+    </div>
+
+    <!-- set the time -->
+    <div id="time">
+      <span id="timeminutes">00</span>:
+      <span id="timeseconds">00</span>:
+      <span id="timecentiseconds">00</span>
+    </div>
+
+    <!-- set up the button -->
+    <div id="control-container row">
+
+      <div class="col-xs-2 col-xs-offset-4">
+        <div class="btn-control" id="startButton">
+          Start
+        </div>
+        <div class="btn-control" id="stopButton">
+          Stop
+        </div>
+        <div class="btn-control" id="resumeButton">
+          Resume
+        </div>
+      </div>
+
+      
+      <!-- set up the second column without the col-xs-offset-4 class -->
+      <div class="col-xs-2">
+        <div class="btn-control" id="lapButton">
+          Lap
+        </div>
+        <div class="btn-control" id="resetButton">
+          Reset
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="laps"></div>
+
+    <!-- =============================== jQuery files ================================= -->
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-3.4.1-dist/js/npm.js"></script>
+
+    <!-- =============================== jQuery files ================================= -->
+    <script src="./jquery-js/jQuery.min.js"></script>
+    <script src="./jquery-ui/jquery-ui.js"></script>
+    <script src="./jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="./js/index.js"></script> 
+  </body>
+</html>
